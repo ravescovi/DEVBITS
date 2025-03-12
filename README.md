@@ -1,6 +1,6 @@
-# BITS: Template Package for Bluesky Instruments
+# DEVBITS: Template Package for Bluesky Instruments
 
-BITS: **B**luesky **I**nstrument **T**emplate**S**
+DEVBITS: **B**luesky **I**nstrument **T**emplate**S**
 
 Template of a Bluesky Data Acquisition Instrument in console, notebook, &
 queueserver.
@@ -10,14 +10,14 @@ queueserver.
 Clone the repository.
 
 ```bash
-git clone git@github.com:BCDA-APS/BITS.git
-cd BITS
+git clone git@github.com:BCDA-APS/DEVBITS.git
+cd DEVBITS
 ```
 
 Set up the development environment.
 
 ```bash
-export ENV_NAME=BITS_env
+export ENV_NAME=DEVBITS_env
 
 conda create -y -n $ENV_NAME python=3.11 pyepics
 conda activate $ENV_NAME
@@ -35,7 +35,7 @@ ipython
 ## Jupyter Notebook Start
 Start JupyterLab, a Jupyter notebook server, or a notebook, VSCode.
 
-## Starting the BITS Package
+## Starting the DEVBITS Package
 
 ```py
 from instrument.startup import *
