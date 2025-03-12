@@ -1,6 +1,9 @@
 name: Init repo
 on: [push]
 
+permissions:
+  contents: write  # Enables pushing commits back to repository
+
 jobs:
   rename-project:
     if: ${{ github.repository != 'bcda-aps/bits' }}
