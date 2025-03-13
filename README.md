@@ -1,28 +1,61 @@
-# DEVBITS: Template Package for Bluesky Instruments
+# BITS: Template Package for Bluesky Instruments
 
-DEVBITS: **B**luesky **I**nstrument **T**emplate**S**
+BITS: **B**luesky **I**nstrument **T**emplate**S**
 
 Template of a Bluesky Data Acquisition Instrument in console, notebook, &
 queueserver.
 
-## Installation
+## Create repository from this template.
 
-Clone the repository.
+
+
+https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
+
+Creating a repository from a template
+On GitHub, navigate to the main page of the repository.
+
+Above the file list, click Use this template.
+
+Select Create a new repository.
+
+![Screenshot of the "Use this template" button and the dropdown menu expanded to show the "Open in a codespace" option.
+](docs/resources/use-this-template-button.webp)
+
+Alternatively, you can open the template in a codespace and publish your work to a new repository later. For more information, see Creating a codespace from a template.
+
+Use the Owner dropdown menu to select the account you want to own the repository.
+
+Screenshot of the owner menu for a new GitHub repository. The menu shows two options, octocat and github.
+Type a name for your repository, and an optional description.
+
+![Image 2](docs/resources/create-repo-from-template.webp)
+
+
+Screenshot of a the first step in creating a repository. The "Repository name" field contains the text "hello-world" and is outlined in orange.
+Choose a repository visibility. For more information, see About repositories.
+
+![Image 3](docs/resources/create-repository-owner.webp)
+
+Optionally, to include the directory structure and files from all branches in the template, and not just the default branch, select Include all branches.
+
+Optionally, if the personal account or organization in which you're creating uses any GitHub Apps from GitHub Marketplace, select any apps you'd like to use in the repository.
+
+Click Create repository from template.
+
+## Installing your own BITS instrument
 
 ```bash
-git clone git@github.com:BCDA-APS/DEVBITS.git
-cd DEVBITS
-```
-
-Set up the development environment.
-
-```bash
-export ENV_NAME=DEVBITS_env
+export ENV_NAME=BITS_env
 
 conda create -y -n $ENV_NAME python=3.11 pyepics
 conda activate $ENV_NAME
 pip install -e ."[all]"
 ```
+
+
+## Edit your instrument
+
+
 
 ## IPython console Start
 
@@ -35,7 +68,7 @@ ipython
 ## Jupyter Notebook Start
 Start JupyterLab, a Jupyter notebook server, or a notebook, VSCode.
 
-## Starting the DEVBITS Package
+## Starting the BITS Package
 
 ```py
 from instrument.startup import *
